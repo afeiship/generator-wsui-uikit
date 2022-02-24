@@ -7,3 +7,8 @@ git clone git@github.com:afeiship/generator-wsui-uikit.git
 cd generator-wsui-uikit
 npm link
 ```
+
+## usage
+```shell
+yo @jswork/wsui-uikit
+```
