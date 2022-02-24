@@ -1,8 +1,9 @@
-# slate-plugin-editor-extension
-> Editor extension for slate.
-
+# generator-wsui-uikit
+> Yeoman generator for wsui ui toolkit.
 
 ## installation
-```bash
-npm install -S @jswork/slate-plugin-editor-extension
+```shell
+git clone git@github.com:afeiship/generator-wsui-uikit.git
+cd generator-wsui-uikit
+npm link
 ```

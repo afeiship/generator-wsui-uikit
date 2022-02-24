@@ -1,0 +1,51 @@
+{
+  "name": "@<%= scope %>/<%= project_name %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "homepage": "https://github.com/afeiship/<%= project_name %>",
+  "author": {
+    "name": "afei",
+    "email": "1290657123@qq.com"
+  },
+  "scripts": {
+    "dev": "start-storybook -p 6006",
+    "build": "gulp",
+    "release": "release-it",
+    "docs": "build-storybook -o docs"
+  },
+  "main": "dist/index.scss",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@jswork/gulp-pkg-header": "^1.0.3",
+    "@jswork/next": "^1.0.4",
+    "@jswork/react-html": "^1.0.0",
+    "@jswork/tippy-reset": "^1.0.2",
+    "@storybook/addon-actions": "^6.1.18",
+    "@storybook/addon-essentials": "^6.1.18",
+    "@storybook/addon-links": "^6.1.18",
+    "@storybook/html": "^6.1.18",
+    "@storybook/preset-scss": "^1.0.3",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.2.2",
+    "del": "^5.1.0",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-load-plugins": "^2.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "release-it": "^14.2.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.0.1"
+  },
+  "publishConfig": {
+    "access": "<%= registry.access %>",
+    "registry": "<%= registry.publish %>"
+  },
+  "keywords": [
+    "wsui",
+    "theme"
+  ]
+}
