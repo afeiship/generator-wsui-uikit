@@ -3,9 +3,8 @@ const Generator = require("yeoman-generator");
 const chalk = require("chalk");
 const yosay = require("yosay");
 const getp = require("@jswork/generator-prompts");
-const MAIN = "@jswork/ui-kit";
 const prompts = getp(["scope", "registry", "project_name", "description"]);
-
+const globby = require("globby");
 
 module.exports = class extends Generator {
   prompting() {
@@ -24,7 +23,7 @@ module.exports = class extends Generator {
 
   writing() {
     this.fs.copyTpl(
-      this.templatePath("**"),
+      globby.sync(this.templatePath("**"), { dot: true }),
       this.destinationPath(),
       this.props
     );
